@@ -40,7 +40,8 @@ function newQuote() {
 }
 
 function shareOnTwitter() {
-    window.open(`https://twitter.com/intent/tweet?text=${randomQuote.text} - ${randomQuote.author}`, '_blank');
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${randomQuote.text} - ${randomQuote.author}`;
+    window.open(twitterUrl, '_blank');
 }
 
 newQuoteButton.addEventListener('click', getQuotes);
